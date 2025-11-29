@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fasilitas - Wisata Riau</title>
+    <!-- Bootstrap 5.3.8 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold brand-logo" href="index.html">
+                <i class="fas fa-mountain-sun me-2"></i>Wisata Riau
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destinasi.html">Destinasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeri.html">Galeri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="fasilitas.html">Fasilitas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tips.html">Tips</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontak.html">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header fasilitas-header">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center text-white">
+                    <h1 class="display-4 fw-bold mb-4">Fasilitas Wisata</h1>
+                    <p class="lead">Nikmati berbagai fasilitas lengkap untuk kenyamanan Anda</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Overview -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col">
+                    <h2 class="section-title">Fasilitas Unggulan</h2>
+                    <p class="section-subtitle">Kami menyediakan berbagai fasilitas terbaik untuk pengalaman wisata yang tak terlupakan</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="facility-card text-center">
+                        <div class="facility-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <h5>Parkir Luas</h5>
+                        <p>Area parkir yang aman dan luas untuk kendaraan pribadi dan bus</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="facility-card text-center">
+                        <div class="facility-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h5>Restoran & Cafe</h5>
+                        <p>Berbagai pilihan makanan dan minuman dengan cita rasa lokal</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="facility-card text-center">
+                        <div class="facility-icon">
+                            <i class="fas fa-toilet"></i>
+                        </div>
+                        <h5>Toilet Bersih</h5>
+                        <p>Fasilitas toilet yang terjaga kebersihannya di berbagai titik</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="facility-card text-center">
+                        <div class="facility-icon">
+                            <i class="fas fa-first-aid"></i>
+                        </div>
+                        <h5>P3K</h5>
+                        <p>Pos kesehatan dan pertolongan pertama untuk keadaan darurat</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Facilities -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col text-center">
+                    <h2 class="section-title">Detail Fasilitas</h2>
+                    <p class="section-subtitle">Informasi lengkap tentang fasilitas yang tersedia</p>
+                </div>
+            </div>
+
+            <!-- Facility Tabs -->
+            <div class="row">
+                <div class="col-12">
+                    <ul class="nav nav-pills mb-4 justify-content-center" id="facilityTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="umum-tab" data-bs-toggle="pill" data-bs-target="#umum" type="button">
+                                <i class="fas fa-building me-2"></i>Fasilitas Umum
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="akomodasi-tab" data-bs-toggle="pill" data-bs-target="#akomodasi" type="button">
+                                <i class="fas fa-hotel me-2"></i>Akomodasi
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="rekreasi-tab" data-bs-toggle="pill" data-bs-target="#rekreasi" type="button">
+                                <i class="fas fa-gamepad me-2"></i>Rekreasi
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="akses-tab" data-bs-toggle="pill" data-bs-target="#akses" type="button">
+                                <i class="fas fa-road me-2"></i>Aksesibilitas
+                            </button>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="facilityTabContent">
+                        
+                        <!-- Fasilitas Umum -->
+                        <div class="tab-pane fade show active" id="umum" role="tabpanel">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="facility-detail-card">
+                                        <div class="facility-detail-header">
+                                            <i class="fas fa-car"></i>
+                                            <h5>Area Parkir</h5>
+                                        </div>
+                                        <div class="facility-detail-body">
+                                            <p>Area parkir yang luas dan aman dengan kapasitas hingga 500 kendaraan. Dilengkapi dengan:</p>
+                                            <ul>
+                                                <li>Parkir mobil & motor yang terpisah</li>
+                                                <li>Area parkir bus khusus</li>
+                                                <li>Parkir khusus disabilitas</li>
+                                                <li>Security 24 jam</li>
+                                                <li>Sistem parkir terintegrasi</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="facility-detail-card">
+                                        <div class="facility-detail-header">
+                                            <i class="fas fa-restroom"></i>
+                                            <h5>Toilet & Mushola</h5>
+                                        </div>
+                                        <div class="facility-detail-body">
+                                            <p>Fasilitas toilet dan mushola yang bersih dan terawat di berbagai lokasi strategis:</p>
+                                            <ul>
+                                                <li>Toilet pria & wanita terpisah</li>
+                                                <li>Toilet disabilitas</li>
+                                                <li>Mushola dengan fasilitas wudhu</li>
+                                                <li>Toilet bayi & area ganti popok</li>
+                                                <li>Kebersihan terjaga setiap 2 jam</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="facility-detail-card">
+                                        <div class="facility-detail-header">
+                                            <i class="fas fa-first-aid"></i>
+                                            <h5>Kesehatan & Keamanan</h5>
+                                        </div>
+                                        <div class="facility-detail-body">
+                                            <p>Fasilitas kesehatan dan keamanan untuk menjamin kenyamanan pengunjung:</p>
+                                            <ul>
+                                                <li>Pos kesehatan dengan perawat</li>
+                                                <li>P3K lengkap</li>
+                                                <li>Security patrol 24 jam</li>
+                                                <li>Sistem CCTV terintegrasi</li>
+                                                <li>Tim evakuasi darurat</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="facility-detail-card">
+                                        <div class="facility-detail-header">
+                                            <i class="fas fa-info-circle"></i>
+                                            <h5>Informasi & Layanan</h5>
+                                        </div>
+                                        <div class="facility-detail-body">
+                                            <p>Layanan informasi dan bantuan untuk pengunjung:</p>
+                                            <ul>
+                                                <li>Information center</li>
+                                                <li>Peta wisata digital</li>
+                                                <li>Tour guide berpengalaman</li>
+                                                <li>Layanan keluhan pengunjung</li>
+                                                <li>WiFi gratis area tertentu</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Akomodasi -->
+                        <div class="tab-pane fade" id="akomodasi" role="tabpanel">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="facility-detail-card">
+                                        <div class="facility-detail-header">
+                                            <i class="fas fa-utensils"></i>
+                                            <h5>Restoran & Kuliner</h5>
+                                        </div>
+                                        <div class="facility-detail-body">
+                                            <p>Berbagai pilihan tempat makan dengan menu lokal dan internasional:</p>
+                                            <ul>
+                                                <li>Restoran utama dengan kapasitas 200 orang</li>
+                                                <li>Food court dengan berbagai pilihan</li>
+                                                <li>Cafe dengan view pemandangan</li>
+                                                <li>Warung makan tradisional</li>
+                                                <li>Menu khusus vegetarian</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="facility-detail-card">
+                                        <div class="facility-detail-header">
+                                            <i class="fas fa-shopping-bag"></i>
+                                            <h5>Souvenir & Oleh-oleh</h5>
+                                        </div>
+                                        <div class="facility-detail-body">
+                                            <p>Tempat berbelanja souvenir khas Riau dan oleh-oleh:</p>
+                                            <ul>
+                                                <li>Toko souvenir resmi</li>
+                                                <li>Oleh-oleh khas Riau</li>
+                                                <li>Kerajinan tangan lokal</li>
+                                                <li>Minuman dan makanan khas</li>
+                                                <li>Payment system modern</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="facility-detail-card">
+                                        <div class="facility-detail-header">
+                                            <i class="fas fa-couch"></i>
+                                            <h5>Area Istirahat</h5>
+                                        </div>
+                                        <div class="facility-detail-body">
+                                            <p>Fasilitas istirahat untuk pengunjung yang lelah:</p>
+                                            <ul>
+                                                <li>Gazebo dengan view terbaik</li>
+                                                <li>Area piknik yang teduh</li>
+                                                <li>Bench di spot strategis</li>
+                                                <li>Area bersantai ber-AC</li>
+                                                <li>Charging station</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="facility-detail-card">
+                                        <div class="facility-detail-header">
+                                            <i class="fas fa-baby"></i>
+                                            <h5>Fasilitas Keluarga</h5>
+                                        </div>
+                                        <div class="facility-detail-body">
+                                            <p>Fasilitas khusus untuk kenyamanan keluarga:</p>
+                                            <ul>
+                                                <li>Area menyusui yang nyaman</li>
+                                                <li>Toilet dengan baby changer</li>
+                                                <li>Stroller rental</li>
+                                                <li>Area bermain anak indoor</li>
+                                                <li>Menu khusus anak</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Rekreasi -->
+                        <div class="tab-pane fade" id="rekreasi" role="tabpanel">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="facility-detail-card">
+                                        <div class="facility-detail-header">
+                                            <i class="fas fa-swimming-pool"></i>
+                                            <h5>Kolam Renang</h5>
+                                        </div>
+                                        <div class="facility-detail-body">
+                                            <p>Fasilitas kolam renang dengan standar keamanan tinggi:</p>
+                                            <ul>
+                                                <li>Kolam renang dewasa & anak</li>
+                                                <li>Water slide yang aman</li>
+                                                <li>Life guard bersertifikat</li>
+                                                <li>Area kolam yang bersih</li>
+                                                <li>Locker dan changing room</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="facility-detail-card">
+                                        <div class="facility-detail-header">
+                                            <i class="fas fa-gamepad"></i>
+                                            <h5>Wahana Permainan</h5>
+                                        </div>
+                                        <div class="facility-detail-body">
+                                            <p>Berbagai wahana permainan untuk semua usia:</p>
+                                            <ul>
+                                                <li>Wahana keluarga yang aman</li>
+                                                <li>Permainan tradisional</li>
+                                                <li>Area outbond</li>
+                                                <li>Permainan edukatif anak</li>
+                                                <li>Standar keamanan Eropa</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="facility-detail-card">
+                                        <div class="facility-detail-header">
+                                            <i class="fas fa-camera"></i>
+                                            <h5>Spot Foto</h5>
+                                        </div>
+                                        <div class="facility-detail-body">
+                                            <p>Berbagai spot foto menarik dan instagramable:</p>
+                                            <ul>
+                                                <li>Spot foto dengan view terbaik</li>
+                                                <li>Photo booth self-service</li>
+                                                <li>Area foto bertema</li>
+                                                <li>Lighting untuk foto malam</li>
+                                                <li>Photographer profesional</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="facility-detail-card">
+                                        <div class="facility-detail-header">
+                                            <i class="fas fa-binoculars"></i>
+                                            <h5>Wisata Alam</h5>
+                                        </div>
+                                        <div class="facility-detail-body">
+                                            <p>Fasilitas pendukung aktivitas wisata alam:</p>
+                                            <ul>
+                                                <li>Jalur trekking yang aman</li>
+                                                <li>Pemandu wisata alam</li>
+                                                <li>Peralatan camping rental</li>
+                                                <li>Area berkemah yang ditentukan</li>
+                                                <li>Pos istirahat di jalur trekking</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Aksesibilitas -->
+                        <div class="tab-pane fade" id="akses" role="tabpanel">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="facility-detail-card">
+                                        <div class="facility-detail-header">
+                                            <i class="fas fa-wheelchair"></i>
+                                            <h5>Akses Disabilitas</h5>
+                                        </div>
+                                        <div class="facility-detail-body">
+                                            <p>Fasilitas khusus untuk pengunjung disabilitas:</p>
+                                            <ul>
+                                                <li>Jalur khusus kursi roda</li>
+                                                <li>Toilet disabilitas</li>
+                                                <li>Parkir khusus disabilitas</li>
+                                                <li>Ramp di setiap bangunan</li>
+                                                <li>Lift untuk area tertentu</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="facility-detail-card">
+                                        <div class="facility-detail-header">
+                                            <i class="fas fa-bus"></i>
+                                            <h5>Transportasi</h5>
+                                        </div>
+                                        <div class="facility-detail-body">
+                                            <p>Fasilitas transportasi dalam kawasan wisata:</p>
+                                            <ul>
+                                                <li>Shuttle bus gratis</li>
+                                                <li>Penyewaan sepeda</li>
+                                                <li>Golf cart rental</li>
+                                                <li>Halte transportasi</li>
+                                                <li>Taxi & ojek online area</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="facility-detail-card">
+                                        <div class="facility-detail-header">
+                                            <i class="fas fa-wifi"></i>
+                                            <h5>Konektivitas</h5>
+                                        </div>
+                                        <div class="facility-detail-body">
+                                            <p>Fasilitas konektivitas dan teknologi:</p>
+                                            <ul>
+                                                <li>WiFi gratis area tertentu</li>
+                                                <li>Charging station</li>
+                                                <li>Sinyal seluler kuat</li>
+                                                <li>Digital information board</li>
+                                                <li>Mobile app support</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="facility-detail-card">
+                                        <div class="facility-detail-header">
+                                            <i class="fas fa-credit-card"></i>
+                                            <h5>Pembayaran</h5>
+                                        </div>
+                                        <div class="facility-detail-body">
+                                            <p>Berbagai metode pembayaran yang tersedia:</p>
+                                            <ul>
+                                                <li>Cash payment</li>
+                                                <li>E-money & e-wallet</li>
+                                                <li>Kartu kredit/debit</li>
+                                                <li>QRIS payment</li>
+                                                <li>Online booking system</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facility Comparison -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col">
+                    <h2 class="section-title">Fasilitas per Destinasi</h2>
+                    <p class="section-subtitle">Perbandingan fasilitas yang tersedia di setiap destinasi</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="table-responsive">
+                        <table class="table table-hover facility-comparison">
+                            <thead>
+                                <tr>
+                                    <th>Fasilitas</th>
+                                    <th>Danau Buatan</th>
+                                    <th>Asia Farm</th>
+                                    <th>Taman Rekreasi</th>
+                                    <th>Museum Budaya</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Parkir Luas</td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Restoran</td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td><i class="fas fa-times text-danger"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Kolam Renang</td>
+                                    <td><i class="fas fa-times text-danger"></i></td>
+                                    <td><i class="fas fa-times text-danger"></i></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td><i class="fas fa-times text-danger"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Wahana Permainan</td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td><i class="fas fa-times text-danger"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Area Edukasi</td>
+                                    <td><i class="fas fa-times text-danger"></i></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>WiFi Gratis</td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 cta-section">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="mb-4">Ada Pertanyaan tentang Fasilitas?</h2>
+                    <p class="lead mb-4">Tim kami siap membantu menjawab semua pertanyaan Anda mengenai fasilitas yang tersedia.</p>
+                    <a href="kontak.html" class="btn btn-light btn-lg me-3">
+                        <i class="fas fa-headset me-2"></i>Hubungi Kami
+                    </a>
+                    <a href="destinasi.html" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-map me-2"></i>Lihat Destinasi
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="footer-brand">
+                        <i class="fas fa-mountain-sun me-2"></i>Wisata Riau
+                    </h5>
+                    <p class="footer-text">Destinasi wisata terbaik di Sumatera dengan pesona alam dan budaya yang memukau.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="footer-title">Menu</h6>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinasi.html">Destinasi</a></li>
+                        <li><a href="galeri.html">Galeri</a></li>
+                        <li><a href="fasilitas.html">Fasilitas</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="footer-title">Kontak</h6>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone me-2"></i>+62 812-3456-7890</p>
+                        <p><i class="fas fa-envelope me-2"></i>info@wisatariau.com</p>
+                        <p><i class="fas fa-map-marker-alt me-2"></i>Pekanbaru, Riau</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h6 class="footer-title">Jam Operasional</h6>
+                    <div class="operating-hours">
+                        <p>Senin - Jumat: 08:00 - 17:00</p>
+                        <p>Sabtu - Minggu: 07:00 - 18:00</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row">
+                <div class="col text-center">
+                    <p class="footer-copyright">&copy; 2025 Wisata Riau. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/fasilitas.js"></script>
+</body>
+</html>
